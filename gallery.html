@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="gallery-style.css">
+<body>
+    <nav class="navbar ">
+
+        <div class="logo"><img src="image/logo3.png" alt="logo"></div>
+
+        <ul class="nav-list v-class">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="admission.html">Addmision</a></li>
+            <li><a href="examination.html">Examnation</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#News & Events">News & Events</a></li>
+            <li><a href="#Achievements">Achievements</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+
+        </ul>
+
+    </nav>
+    
+    <strong class="school-name">
+        <marquee behavior="" direction="" scrollamount = "25"><div class="animated-school-name">Sarswati Shishu Mandir</div></marquee>
+        
+    </strong>
+    <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="full-img" id="fullImgBox">
+        <img src="image/modified-bg-1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="image/modified-bg-1.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-2.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-3.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-4.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-1.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-2.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-3.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-4.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    <footer class="footer-main">
+        <div class="footer-contact-media-link">
+            <div class="footer-contact-us">
+                <h1>Contact Us</h1>
+                <p>
+                    SARASWATI SHISHU MANDIR, JOGIYACOL, BHITI RAWAT, SAHJANWA
+                </p>
+                <p>Phone: +91-9696238943</p>
+                <p>Email: sps.shiva.sps@gmail.com</p>
+            </div>
+            <div class="footer-media">
+                <h1>Media</h1>
+                <li style="list-style: none;"><a href="galery.html" style="text-decoration: none; color: white;">Photo
+                        Gallery</a></li>
+                <li style="list-style: none;"><a href="galery.html" style="text-decoration: none; color: white;">Video
+                        Gallery</a></li>
+                <div>Media Coverage</div>
+            </div>
+            <div class="footer-social-media-links">
+                <h1>Our Social Media Links</h1>
+                <div class="footer-social-media-icon">
+
+                    <a href="https://www.facebook.com/shivanand.singh.3323/" target="_blank">
+                        <i class="fa fa-2x fa-facebook" style="color: black;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shivanand4142/" target="_blank">
+                        <i class="fa fa-2x fa-instagram" style="color: black;"></i>
+                    </a>
+                    <a href="https://www.facebook.com/shivanand.singh.3323/" target="_blank">
+                        <i class="fa fa-2x fa-twitter" style="color: black;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/shivanand4142/" target="_blank">
+                        <i class="fa fa-2x fa-youtube" style="color: black;"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="footer-visit-us">
+                <h1>VISIT US</h1>
+            </div>
+
+        </div>
+        <div class="footer-copyright-text">
+            <p class="copyright-center">copyright &COPY; SARASWATI SHISHU MANDIR, JOGIYACOL - all right reserved
+                <BR>Designed by-SHIVANAND SINGH</BR>
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="js/resp.js"></script>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+</body>
+</html>
